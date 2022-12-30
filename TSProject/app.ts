@@ -1,20 +1,16 @@
-const addTwoNums = (n1: number, n2: number, showResult: boolean, stringResult: string) => {
-   
-    const result = n1 + n2;
-    if (booleanResult) {
-
-        return stringResult + result;
-
-    } else {
-        console.log("There was an error.")
-    }
+const person: {
+    name: string,
+    age: number
+} = {
+	name: "nullgar",
+	age: 10000
 };
 
-const theNum1 = 435567;
-const theNum2 = 44522;
-const booleanResult = true;
-const stringResult = "The reult is: ";
+const pc: object = {
+    type: "mac",
+    armChip: "M2",
+    cost: 4000
+}
 
-const result = addTwoNums(theNum1, theNum2, booleanResult, stringResult);
-console.log(result);
-//export{};
+console.log(person.age);
+console.log(pc.cost);
