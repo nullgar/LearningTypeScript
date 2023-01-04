@@ -1,46 +1,19 @@
-var person = {
-    name: "nullgar",
-    age: 10000
+var combine = function (input1, input2) {
+    var result;
+    if (typeof input1 === "number" && typeof input2 === "number") {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + " " + input2.toString();
+    }
+    return result;
 };
-var car = {
-    make: "Ford",
-    year: 2017,
-    wheels: {
-        tires: 4,
-        make: "Bridgestone"
-    },
-    owners: ["nullgar", "frugalPhoenix", "V"]
-};
-var tupleCar = {
-    make: "Subaru",
-    year: 2015,
-    wheels: {
-        tires: 4,
-        make: "Bridgestone"
-    },
-    owners: ["nullgar", "frugalPhoenix", "V"],
-    accidents: [0, "None"] //Tells Typescript that this is a speacial array with a fixed length and fixed types
-};
-// const pc: object = {
-//     type: "mac",
-//     armChip: "M2",
-//     cost: 4000
-// }
-var Role;
-(function (Role) {
-    Role[Role["DADA"] = 0] = "DADA";
-    Role[Role["MAMA"] = 1] = "MAMA";
-    Role[Role["BUBBY"] = 2] = "BUBBY";
-})(Role || (Role = {}));
-;
-var networth = 1000;
-console.log(person.age);
-//console.log(pc["cost"]); //This does not work you need to be specific for object to work properly.
-console.log(car);
-//let owner: string;
-for (var _i = 0, _a = car.owners; _i < _a.length; _i++) {
-    var owner = _a[_i];
-    console.log(owner.toUpperCase()[0] + owner.slice(1));
-}
-;
-console.log('this', tupleCar.accidents);
+var theNum1 = 435567;
+var theNum2 = 44522;
+var theStr1 = "Hello";
+var theStr2 = "World!";
+var result = combine(theNum1, theNum2);
+var result2 = combine(theStr1, theStr2);
+console.log(result);
+console.log(result2);
+//export{};
